@@ -128,7 +128,7 @@ while (True):
    choose = int(input())
    if choose == 1:
      os.system("cls")
-     print("Assim que começar a usar nosso sistema você terá as opções 1, 2, 3, 4, e 5. Caso escolha a opção 1, deverá então cadastrar seu novo cliente, se escolher a opção 2, verá os clientes já cadastrados, caso seja a opção três, poderá remover um cliente, no 4 verá informações sobre o desenvolvedor do sistema, e no 5 encontrará este manual e a seção de Perguntas.")
+     print("Assim que começar a usar nosso sistema você terá as opções 1, 2, 3, 4, e 5. Caso escolha a opção 1, deverá então cadastrar seu novo cliente, se escolher a opção 2, verá os clientes já cadastrados, caso seja a opção três, poderá editar e/ou remover um cliente, no 4 verá informações sobre o desenvolvedor do sistema, e no 5 encontrará este manual e a seção de Perguntas, no 6 gerará um relatório e no 7 ou quaisquer outro número encerrará o programa.")
    elif choose == 2:
      print("Deu trabalho fazer esse programa?""\n""R:Sim""\n""Foi divertido?""\n""R:Sim""\n""Quando vou finalizar o jogo da forca?""\n""R:Não sei""\n")
      time.sleep(2)
