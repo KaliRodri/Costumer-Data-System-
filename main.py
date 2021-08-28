@@ -50,13 +50,13 @@ while (True):
     print("------------------------")
     i.printName()
   
-    print("Digite o nome do cliente para mais informações")
-    nome = input()
-    os.system("cls")
-    for i in lista:
-     if i.Nome == nome:
-      print(i.printData())
-    continue
+  print("Digite o nome do cliente para mais informações")
+  nome = input()
+  
+  for i in lista:
+    if i.Nome == nome:
+     i.printData()
+  continue
     
  if option == 3:
    print("Deseja editar ou remover um cliente?""\n" " 1 - Remover 2 - Editar")
@@ -136,12 +136,16 @@ while (True):
      continue
 
  if option == 6:
+  lines = []
+  header = "Nome, CNPJ, End., Produto"
+  lines.append(header)
   for i in lista:
-   lines = ['relatorio', i.Nome, i.CNPJ, i.Endereco, i.Produto]
-   with open('relatorio.txt', 'w') as f:
+    line = i.Nome +", " +str(i.CNPJ)
+    lines.append(line)
+  with open('relatorio.txt', 'w') as f:
     for line in lines:
-     f.write(line)
-     f.write('\n')
+      f.write(line)
+      f.write('\n')
      
  if option < 7:
   break
